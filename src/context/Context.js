@@ -14,6 +14,7 @@ class Productprovider extends Component{
         cartopen:false,
         cartitems:10,
         links:linkdata,
+        cart:[],
     }
 
     //handle sidebar

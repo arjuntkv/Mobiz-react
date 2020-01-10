@@ -10,7 +10,7 @@ export default function Sidebar() {
             {value=>{
                 const {links,sidebaropen,handlesidebar}=value;
                 return(
-                    <Sidewrapper>
+                    <Sidewrapper show={sidebaropen}>
                         <ul>
                            {links.map(link=>{
                                return(
@@ -30,7 +30,7 @@ export default function Sidebar() {
 
 const Sidewrapper =styled.nav`
     position:fixed;
-    top:61px;
+    top:60px;
     left:0;
     width:100%;
     height:100%;
@@ -38,6 +38,7 @@ const Sidewrapper =styled.nav`
     z-index:1;
     border-right:4px solid #5fb7ea;
     transition:all 0.3s ease-in-out;
+transform:${props=>(props.show?'translatex(0)':'translateX(-100%)')};
     ul{
         list-style-type:none;
         padding:0 !important;
