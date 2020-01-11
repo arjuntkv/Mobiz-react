@@ -39,6 +39,7 @@ const Navwrapper=styled.nav`
     padding: 1rem 1.5rem;
     background:#fafafa;  /*light grey*/
     border-bottom:3px solid #5f5e5e /*dark grey*/;
+    z-index:1;
     
     .nav-center{
         display:flex;

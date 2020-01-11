@@ -1,17 +1,13 @@
-import React from 'react'
-import {Productconsumer} from "../context/Context";
+import React from 'react';
+import Hero from '../components/hero';
+import {Link} from 'react-router-dom';
 
 export default function Homepage() { 
     return (
         <div>
-            <Productconsumer>
-                {value=>{
-                    console.log(value);
-                    return(
-                        <h1>hello from home</h1>
-                    )
-                }}
-            </Productconsumer>
+           <Hero  title="awesome gadgets" max="true">
+               <Link to="/products" className="main-link" style={{ margin: "2rem" }}>products</Link>
+            </Hero>   
         </div>
     )
 }
