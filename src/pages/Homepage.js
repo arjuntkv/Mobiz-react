@@ -10,7 +10,9 @@ export default function Homepage() {
         <div>
            <Hero  title="awesome gadgets" max="true">
                <Link to="/products" className="main-link" style={{ margin: "2rem" }}>products</Link>
-            </Hero>   
+            </Hero>  
+            <Services/>
+            <Featured/> 
         </div>
     )
 }

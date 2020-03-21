@@ -19,12 +19,12 @@ export  const linkdata=[
         path:'/contacts'
     },
     {
-        id:1,
+        id:4,
         text:"products",
         path:'/products'
     },
     {
-        id:1,
+        id:5,
         text:"cart",
         path:'/cart'
     },
