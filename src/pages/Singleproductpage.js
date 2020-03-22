@@ -30,8 +30,8 @@ export default function SingleProductPage() {
                 {/* `../${image}` is used to get image from local storgage. In contentful just {image} is ok */}
                   <div className="col-10 mx-auto col-sm-8 col-md-6 my-3">
                     <img
-                      src={`../${image}`}
-                      // src={image} //in contentfull
+                      //src={`../${image}`} //is used when data is retrieved from local storage
+                      src={image} //in contentful
                       alt="single product"
                       className="img-fluid"
                     />
