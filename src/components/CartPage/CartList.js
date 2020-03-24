@@ -11,6 +11,7 @@ export default function CartList() {
 
           <Productconsumer>
             {value => {
+              
               const { cart, increment, decrement, removeItem } = value;
                 
               // if cart is empty display "cart is empty"

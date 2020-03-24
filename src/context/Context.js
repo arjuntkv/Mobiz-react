@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import {linkdata} from "./Linkdata";
 import { socialData } from "./socialData";
-//import { items } from "./productData";
 
 import {client} from './contentful';
 
@@ -28,6 +27,8 @@ class Productprovider extends Component{
         featuredProducts: [],
         singleProduct: {},
         loading: true,
+
+        //used for filtering
         search: "",
         price: 0,
         min: 0,
@@ -112,7 +113,7 @@ class Productprovider extends Component{
         });
 
         subTotal = parseFloat(subTotal.toFixed(2));
-        let tax = subTotal * 0.2;
+        let tax = subTotal * 0.18;
         tax = parseFloat(tax.toFixed(2));
         let total = subTotal + tax;
         total = parseFloat(total.toFixed(2));
