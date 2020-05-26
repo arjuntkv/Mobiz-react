@@ -10,10 +10,9 @@ export default function Footer() {
           <FooterWrapper>
             <div className="container py-3">
               <div className="row">
-
                 <div className="col-md-6">
                   <p className="text-capitalize">
-                    copyright &copy; tech store {new Date().getFullYear()}. all
+                    copyright &copy; mobiz {new Date().getFullYear()}. all
                     rights reserved{" "}
                   </p>
                 </div>
@@ -25,7 +24,6 @@ export default function Footer() {
                     </a>
                   ))}
                 </div>
-                
               </div>
             </div>
           </FooterWrapper>
@@ -41,7 +39,7 @@ const FooterWrapper = styled.footer`
   .icon {
     font-size: 1.5rem;
     color: var(--mainWhite);
-    transition:all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
   .icon:hover {
     color: var(--primaryColor);
